@@ -1,7 +1,7 @@
 FROM cloudpack/openssh
 
 RUN yum -y update
-RUN yum -y install vim epel-release
+RUN yum -y install vim git epel-release
 RUN yum -y install python-pip
 RUN yum -y clean all
 RUN pip install awscli
